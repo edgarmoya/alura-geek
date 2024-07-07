@@ -1,0 +1,97 @@
+:root {
+  --body-color: #f5f5f5;
+  --decoration-color: #ff6f61;
+}
+
+.add__product__section {
+  width: 50%;
+  margin: 2.5rem auto;
+}
+
+.add__product__section .add__product__section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+}
+
+.add__product__section .add__product__section__container input {
+  width: 100%;
+  margin: 0.9375rem 0;
+  padding: 0.625rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+.add__product__section .add__product__section__container input:focus {
+  border-color: var(--decoration-color);
+  outline: none;
+}
+
+.add__product__section
+  .add__product__section__container
+  .form__buttons__section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.add__product__section
+  .add__product__section__container
+  .form__buttons__section
+  .buttons {
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add__product__section
+  .add__product__section__container
+  .form__buttons__section
+  .save-button {
+  background-color: var(--decoration-color);
+  color: #fff;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+
+.add__product__section
+  .add__product__section__container
+  .form__buttons__section
+  .save-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.375rem 0.5rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.add-product__section
+  .add__product__section__container
+  .form__buttons__section
+  .reset-button {
+  background-color: #ddd;
+  color: #333;
+}
+
+.add-product__section
+  .add__product__section__container
+  .form__buttons__section
+  .reset-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 860px) {
+  .add__product__section {
+    width: 80%;
+  }
+
+  .add__product__section .add__product__section__container {
+    padding: 1.25rem;
+  }
+}
